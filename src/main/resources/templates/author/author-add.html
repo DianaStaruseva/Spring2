@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Author</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Добавление книг</h1>
+<form th:action="${'/author/add'}" method="post">
+    <input type="text" name="name" placeholder="Введите имя">
+    <input type="text" name="patronymic" placeholder="Введите отчество">
+    <input type="text" name="surname" placeholder="Введите фамилию">
+    <input type="number" name="age" placeholder="Введите возраст">
+    <input type="number" name="numberOfWorks" placeholder="Введите количество работ">
+    <br>
+    <button type="submit">Добавить</button>
+</form>
+</body>
+</html>

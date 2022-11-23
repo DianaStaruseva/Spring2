@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Book</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Книги</h1>
+
+<a href="/book/filter">Поиск книг</a>
+<a href="/book/add">Добавление книг</a>
+<div th:each="el : ${books}">
+    <h1 th:text="${el.name}"></h1>
+    <h2 th:text="${el.author}"></h2>
+</div>
+</body>
+</html>
+

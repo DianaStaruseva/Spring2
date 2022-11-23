@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Author</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h2>Поиск авторов</h2>
+<form method="post" th:action="${'/author/filter/allResult'}">
+    <input type="text" name="title">
+    <button type="submit">Найти</button>
+    <div th:each="el : ${result}">
+        <p th:text="${el.surname}"></p>
+    </div>
+</form>
+</body>
+</html>
