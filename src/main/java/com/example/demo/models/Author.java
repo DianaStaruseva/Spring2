@@ -8,13 +8,13 @@ import javax.persistence.Id;
 @Entity
 public class Author {
     public Author(String name, String patronymic, String surname,
-                  byte age, short numberOfWorks) {
+                  byte age, short number_of_works) {
 
         this.name = name;
         this.patronymic = patronymic;
         this.surname = surname;
         this.age = age;
-        this.numberOfWorks = numberOfWorks;
+        this.number_of_works = number_of_works;
     }
 
     public Author() {
@@ -25,7 +25,7 @@ public class Author {
     private Long id;
     private String name, patronymic,surname;
     private  byte age;
-    private  short numberOfWorks;
+    private  short number_of_works;
 
     public Long getId() {
         return id;
@@ -67,11 +67,11 @@ public class Author {
         this.age = age;
     }
 
-    public short getNumberOfWorks() {
-        return numberOfWorks;
+    public short getNumber_of_works() {
+        return number_of_works;
     }
 
-    public void setNumberOfWorks(short numberOfWorks) {
-        this.numberOfWorks = numberOfWorks;
+    public void setNumber_of_works(short number_of_works) {
+        this.number_of_works = number_of_works;
     }
 }
